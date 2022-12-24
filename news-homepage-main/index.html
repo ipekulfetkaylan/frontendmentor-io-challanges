@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#" class="logo">W.</a>
+        </div>
+        <button class="nav-toggle-btn">
+          <div class="logo-two menu-icon">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </button>
+        <nav class="navbar-desk">
+          <ul class="nav-list">
+              <li>
+                  <a href="#" class="navbar-link has-after">Home</a>
+              </li>
+              <li>
+                  <a href="#" class="navbar-link has-after">Cellection</a>
+              </li>
+              <li>
+                  <a href="#" class="navbar-link has-after">Shop</a>
+              </li>
+              <li>
+                  <a href="#" class="navbar-link has-after">Offer</a>
+              </li>
+              <li>
+                  <a href="#" class="navbar-link has-after">Blog</a>
+              </li>
+          </ul>
+      </nav>
+      </div>
+    </header>
+    <div class="mobile-navbar">
+      <div class="cart-overlay">
+      <nav class="navbar">
+          <i class="fa-solid fa-xmark close-icon"></i>
+        <div class="nav-list-container">
+          <ul class="navbar-list">
+            <li class="nav-item">
+                <a href="#home" class="navbar-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#new" class="navbar-link">New</a>
+            </li>
+            <li class="nav-item">
+                <a href="#popular" class="navbar-link">Popular</a>
+            </li>
+            <li class="nav-item">
+                <a href="#trending" class="navbar-link">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a href="#categories" class="navbar-link">Categories</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+      </div>
+    </div>
+
+    <main>
+      <div class="main-box">
+        <article>
+          <div class="container">
+            <div class="container-main">
+              <div class="images">
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+              </div>
+              <div class="big-text">
+                <div class="title">
+                  <h1>
+                    The Bright Future of Web 3.0?
+                  </h1>
+                </div>
+                <div class="explanation">
+                  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem pariatur deleniti labore? Impedit nihil cupiditate architecto explicabo, voluptatem consectetur nam harum veritatis sed veniam rem?</p>
+                  <button class="btn">READ MORE</button>
+                </div>
+              </div>
+            </div>
+              
+          </div>
+        </article>
+  
+        <article>
+          <section>
+            <div class="container">
+              <div class="news-box">
+                <div class="news-title">
+                  <h2>New</h2>
+                </div>
+                <div class="new-box">
+                  <div class="new-title">
+                    <h3>Hydogen VS Electric Cars</h3>
+                  </div>
+                  <p class="new-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, dolore!</p>
+                  <div class="route"></div>
+                </div>
+                <div class="new-box">
+                  <div class="new-title">
+                    <h3>The Downsides of Al Artistry</h3>
+                  </div>
+                  <p class="new-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, dolore!</p>
+    
+                  <div class="route"></div>
+                </div>
+                <div class="new-box">
+                  <div class="new-title">
+                    <h3>Is VC Funding Drying Up?</h3>
+                  </div>
+                  <p class="new-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, dolore!</p>
+                </div>
+              </div>
+            
+              
+            </div>
+          </section>
+        </article>
+      </div>
+      
+
+      <article>
+        <section>
+          <div class="container">
+            <div class="box">
+              <div class="box-item">
+                <div class="image-box">
+                  <img src="./assets/images/image-retro-pcs.jpg" alt="">
+                </div>
+                <div class="text-box">
+                  <div class="num">01</div>
+                    <h1 class="text-title">
+                      Reviving Retor Pcs
+                    </h1>
+                  <div class="new-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, nisi!</div>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="image-box">
+                  <img src="./assets/images/image-top-laptops.jpg" alt="">
+                </div>
+                <div class="text-box">
+                  <div class="num">02</div>
+                    <h1 class="text-title">
+                      Top 10 Laptops of 2022
+                    </h1>
+                  <div class="new-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, nisi!</div>
+                </div>
+              </div>
+              <div class="box-item">
+                <div class="image-box">
+                  <img src="./assets/images/image-gaming-growth.jpg" alt="">
+                </div>
+                <div class="text-box">
+                  <div class="num">03</div>
+                    <h1 class="text-title">
+                      The Growth of Gaming
+                    </h1>
+                  <div class="new-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, nisi!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+  
+  
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">İpek Ülfet Kaylan</a>.
+  </div>
+  </div>
+
+
+
+<script>
+  const navToggleBtn= document.querySelector('.nav-toggle-btn');
+  const cartOverlay= document.querySelector('.cart-overlay');
+  const closeIcon= document.querySelector('.close-icon');
+
+  navToggleBtn.addEventListener('click',()=>{
+    cartOverlay.classList.add('active');
+    navToggleBtn.classList.add('active');
+  })
+  closeIcon.addEventListener('click',()=>{
+    cartOverlay.classList.remove('active');
+    navToggleBtn.classList.remove('active');
+
+  })
+
+</script>
+
+</body>
+</html>
