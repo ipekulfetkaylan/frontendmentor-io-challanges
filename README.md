@@ -1,2 +1,3 @@
 # frontendmentor-io-challanges
-Challenges I made on frontendmentor.io
+
+This repo contains the challenge solutions from frontendmentor.io
