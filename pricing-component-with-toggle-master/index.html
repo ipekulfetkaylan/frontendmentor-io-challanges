@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title">
+      <h2>Our Pricing</h2>
+    </div>
+    <div class="switch-box">
+      <span>Annually</span>
+      <div class="toggle">
+        <span class="switch"></span>
+      </div> 
+      <span>Monthly</span>
+    </div>
+
+    <div class="wrapper">
+      <div class="card">
+          <h5 class="card-title">Basic</h5>
+          <div class="price"> 
+            <span class="dollar">$</span> 
+            199.99
+          </div>
+          <div class="card-list">
+            <ul>
+              <li>500 GB Storage</li>
+              <li>2 Users Allowed</li>
+              <li>Send up to 3 GB</li>
+            </ul>
+          </div>
+          <button class="btn">LEARN MORE</button>
+      </div>
+      <div class="card suggested">
+          <h5 class="card-title">Professional</h5>
+          <div class="price"> 
+            <span class="dollar">$</span> 
+            249.99
+          </div>
+          <div class="card-list">
+            <ul>
+              <li>1 TB Storage</li>
+              <li>5 Users Allowed</li>
+              <li>Send up to 10 GB</li>
+            </ul>
+          </div>
+          <button class="btn">LEARN MORE</button>
+      </div>
+      <div class="card">
+          <h5 class="card-title">Master</h5>
+          <div class="price"> 
+            <span class="dollar">$</span> 
+            399.99
+          </div>
+          <div class="card-list">
+            <ul>
+              <li>2 TB Storage</li>
+              <li>10 Users Allowed</li>
+              <li>Send up to 20 GB</li>
+            </ul>
+          </div>
+          <button class="btn">LEARN MORE</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ipekulfetkaylan">İpek Ülfet Kaylan</a>.
+  </div>
+
+
+  <script>
+    const toggleEl= document.querySelector('.toggle');
+    const switchEL= document.querySelector('.switch');
+    switchEL.addEventListener('click',()=>{
+      toggleEl.classList.toggle('active')
+    })
+
+  </script>
+</body>
+</html>
