@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <p class="logo">snap</p>
+        <ul class="nav-item">
+          <li>
+            <a id="features" href="#">Features</a>
+            <img id="icon-down" src="./images/icon-arrow-down.svg" alt="">
+            <img class="icon-up" src="./images/icon-arrow-up.svg" alt="">
+          </li>
+          <div class="list-box list-box-one">
+            <div  class="list-item">
+              <img class="icon" src="./images/icon-todo.svg" alt="">
+              <a class="list">Todo List</a>
+            </div>
+            <div class="list-item">
+              <img class="icon" src="./images/icon-calendar.svg" alt="">
+              <a class="list">Calendar</a>
+            </div>
+            <div class="list-item">
+              <img class="icon" src="./images/icon-reminders.svg" alt="">
+              <a class="list">Reminders</a>
+            </div>
+            <div class="list-item">
+              <img class="icon" src="./images/icon-planning.svg" alt="">
+              <a class="list">Planing</a>
+            </div>
+          </div>
+          <li>
+            <a id="company" href="#">Company</a>
+            <img id="icon-down-2" src="./images/icon-arrow-down.svg" alt="">
+            <img class="icon-up-2" src="./images/icon-arrow-up.svg" alt="">
+          </li>
+          <div class="list-box list-box-two">
+            <div class="list-item">History</div>
+            <div class="list-item">Out team</div>
+            <div class="list-item">Blog</div>
+          </div>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-left">
+        <ul class="nav-item">
+          <li>
+            <a href="#">Login</a>
+          </li>
+          <li>
+            <button class="btn">Register</button>
+          </li>
+        </ul>
+        <div class="hamburger"><img src="images/icon-menu.svg" alt=""></div>
+        <div class="hamburger-x"> <img src="images/icon-close-menu.svg" alt=""></div>
+      </div>
+    </nav>
+    <div class="overlay"></div>
+    <div class="mobile-nav">
+      <ul>
+        <li class="features-mobile">Features
+           <img class="featuresArrow" src="./images/icon-arrow-down.svg" alt="">
+           <img class="icon-up-m"src="./images/icon-arrow-up.svg" alt="">
+          </li>
+        <ul class="dropdown">
+          <li> <img src="images/icon-todo.svg" alt=""> Todo List</li>
+          <li> <img src="images/icon-calendar.svg" alt=""> Calendar</li>
+          <li> <img src="images/icon-reminders.svg" alt=""> Reminders</li>
+          <li> <img src="images/icon-planning.svg" alt=""> Planning</li>
+      </ul>
+      <li class="company-mobile">
+        Company 
+        <img class="featuresArrow2" src="./images/icon-arrow-down.svg" alt=""> 
+        <img class="icon-up-m2" src="./images/icon-arrow-up.svg" alt=""> 
+      </li>
+      <ul class="dropdown2">
+        <li>History</li>
+        <li>Our Team</li>
+        <li>Blog</li>
+      </ul>
+      <li>Careers</li>
+      <li>About</li>
+      <ul class="mobile-login">
+        <span >Login</span>
+        <span class="btn">Register</span>
+      </ul>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="main-left">
+        <h1 class="title">Make remote work</h1>
+        <p class="text"> Get your team in sync, no matter your location. <br> Streamline processes, 
+          create team rituals, and <br> watch productivity soar.
+        </p>
+        <button class="btn-left">Learn more</button>
+        <div class="items">
+          <ul>
+            <li>
+              <img src="./images/client-databiz.svg" alt="" class="images">
+            </li>
+            <li>
+              <img src="./images/client-audiophile.svg" alt="" class="images">
+            </li>
+            <li>
+              <img src="./images/client-meet.svg" alt="" class="images">
+            </li>
+            <li>
+              <img src="./images/client-maker.svg" alt="" class="images">
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="main-right">
+        <img class="desktop-img" src="./images/image-hero-desktop.png" style="width: 400px;" alt="">
+        <img class="mobile-img" src="./images/image-hero-mobile.png" alt="">
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution" style="margin-top: 50px;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">İpek Ülfet Kaylan</a>.
+  </div>
+
+  <script>
+    const featuresEl= document.querySelector('#features');
+    const companyEl= document.querySelector('#company');
+    const listBoxTwoEl= document.querySelector(".list-box-two");
+    const listBoxOneEl= document.querySelector(".list-box-one");
+    const overlayEl= document.querySelector(".overlay");
+    const hamburgerEl= document.querySelector(".hamburger");
+    const mobileNav= document.querySelector(".mobile-nav");
+    const hamburgerX= document.querySelector(".hamburger-x");
+    const dropdownEl= document.querySelector('.dropdown')
+    const dropdownElTwo= document.querySelector('.dropdown2')
+    const featuresMobile= document.querySelector('.features-mobile')
+    const companyMobile= document.querySelector('.company-mobile')
+    const featuresArrow= document.querySelector('.featuresArrow')
+    const iconUp= document.querySelector('.icon-up')
+    const iconUpTwo= document.querySelector('.icon-up-2')
+    const iconDown= document.querySelector('#icon-down')
+    const iconDownTwo= document.querySelector('#icon-down-2')
+    const featuresArrowTwo= document.querySelector('.featuresArrow2');
+    const iconUpM= document.querySelector('.icon-up-m');
+    const iconUpMTwo= document.querySelector('.icon-up-m2');
+
+    featuresEl.addEventListener('click', ()=>{
+      listBoxOneEl.classList.toggle('active');
+      iconUp.classList.toggle('active');
+      iconDown.classList.toggle('none')
+
+    })
+    featuresMobile.addEventListener('click', ()=>{
+      dropdownEl.classList.toggle('active');
+      featuresArrow.classList.toggle('none');
+      iconUpM.classList.toggle('active');
+    })
+    companyEl.addEventListener('click', ()=>{
+      listBoxTwoEl.classList.toggle('active');
+      iconUpTwo.classList.toggle('active');
+      iconDownTwo.classList.toggle('none')
+    })
+    companyMobile.addEventListener('click',()=>{
+      dropdownElTwo.classList.toggle('active')
+      featuresArrowTwo.classList.toggle('none')
+      iconUpMTwo.classList.toggle('active')
+    })
+    hamburgerEl.addEventListener('click', ()=>{
+      overlayEl.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+      hamburgerX.classList.toggle('active');
+    })
+    hamburgerX.addEventListener('click', ()=>{
+      overlayEl.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+      hamburgerX.classList.toggle('active');
+
+    })
+  </script>
+</body>
+</html>
